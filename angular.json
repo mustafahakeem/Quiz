@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
+               "../Quiz/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../Quiz/node_modules/jquery/dist/jquery.min.js",
+              "../Quiz/node_modules/popper.js/dist/popper.min.js",
+              "../Quiz/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

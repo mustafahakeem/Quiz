@@ -1,0 +1,8 @@
+<div *ngFor="let ques of dbQuestions">
+    <div *ngIf = "ques.quesType==1">
+       <app-text-question></app-text-question>
+    </div>
+    <div *ngIf = "ques.quesType==2">
+        <app-options-question></app-options-question>
+    </div>
+</div>
