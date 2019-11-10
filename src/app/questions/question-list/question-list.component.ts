@@ -9,9 +9,14 @@ import { QuestionService } from 'src/app/_services/question.service';
 export class QuestionListComponent implements OnInit {
 
   dbQuestions: any [];
+  answerCount=0;
   constructor(private questionService: QuestionService) { }
 
   ngOnInit() {
     this.dbQuestions =  this.questionService.getQuestions();
+  }
+  updateAnswerCount(event:any)
+  {
+    this.answerCount++;
   }
 }

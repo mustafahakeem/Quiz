@@ -1,8 +1,9 @@
+<div>Answer {{answerCount}}</div>
 <div *ngFor="let ques of dbQuestions">
     <div *ngIf = "ques.quesType==1">
-       <app-text-question></app-text-question>
+       <app-text-question [question]="ques" (textAnswer)="updateAnswerCount($event)"></app-text-question>
     </div>
     <div *ngIf = "ques.quesType==2">
-        <app-options-question></app-options-question>
+        <app-options-question [question]="ques"></app-options-question>
     </div>
 </div>
