@@ -29,12 +29,14 @@
             ],
             "styles": [
                "../Quiz/node_modules/bootstrap/dist/css/bootstrap.min.css",
+               "../Quiz/node_modules/angular2-toaster/toaster.min.css",
               "src/styles.scss"
             ],
             "scripts": [
               "../Quiz/node_modules/jquery/dist/jquery.min.js",
               "../Quiz/node_modules/popper.js/dist/popper.min.js",
-              "../Quiz/node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "../Quiz/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "../Quiz/node_modules/angular2-toaster/bundles/angular2-toaster.umd.min.js"
             ]
           },
           "configurations": {
