@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-options-question',
@@ -7,11 +7,18 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OptionsQuestionComponent implements OnInit {
   @Input() question:any;
+  optionQuestion:any;
+  @Output() optionAnswer = new EventEmitter();
   
 
   constructor() { }
 
   ngOnInit() {
+    this.optionQuestion=this.question;
+  }
+  answerSubmit(){
+
+    this.optionAnswer.emit(1)
   }
 
 }

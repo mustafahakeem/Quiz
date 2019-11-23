@@ -9,7 +9,7 @@ export class TextQuestionComponent implements OnInit {
   @Input() question:any;
   localQues:any;
   @Output() textAnswer=new EventEmitter();
-
+  enteredAnswer: string;
 
 
   constructor() { }
@@ -18,7 +18,12 @@ export class TextQuestionComponent implements OnInit {
     this.localQues=this.question;
   }
   answerClicked(){
-    this.textAnswer.emit(1);
+    this.textAnswer.emit({questionId: this.localQues.id, answer: this.enteredAnswer});
+  }
+
+  OnValueChanged (event:any)
+  {
+    this.enteredAnswer = event.Val;
   }
 
 }
