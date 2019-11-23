@@ -24,11 +24,4 @@ export class QuestionListComponent implements OnInit {
     this.answerCount++;
     this.localStorageService.set("AnswerCount", this.answerCount);
   }
-  modifyAnswerCount(event:any){
-    this.answerCount++;
-  }
-  onValueChanged(event:any){
-    this.localStorageService.set("textAnswer", this.valueChanged);
-  }
-
 }

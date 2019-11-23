@@ -23,7 +23,7 @@ export class TextQuestionComponent implements OnInit {
 
   OnValueChanged (event:any)
   {
-    this.enteredAnswer = event.Val;
+    this.enteredAnswer = event.target.Value;
   }
 
 }

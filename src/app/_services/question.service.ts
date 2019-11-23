@@ -16,9 +16,9 @@ export class QuestionService {
   }
   getOptions(optionVal:number){
     const options = [
-       {text: 'option' + optionVal+ 1 , value: optionVal+ 1} ,
-       {text: 'option' +optionVal+ 2, value: optionVal+ 2},
-       {text: 'option' +optionVal+ 3, value: optionVal+ 3}
+       {text: 'option' + optionVal+ 1 , id: optionVal+ 1} ,
+       {text: 'option' +optionVal+ 2, id: optionVal+ 2},
+       {text: 'option' +optionVal+ 3, id: optionVal+ 3}
       ]
      return options
   }
