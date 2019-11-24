@@ -1,5 +1,5 @@
 <div>
-<label>{{localQues.name}}</label>
-<input type="text" (valueChanged) = "OnValueChanged($event)">
+<label>{{localQues.text}}</label>
+<input type ="text" (keyup) = "onValueChanged($event)" value="{{enteredAnswer}}">
 <button (click)="answerClicked()">Submit</button>
 </div>

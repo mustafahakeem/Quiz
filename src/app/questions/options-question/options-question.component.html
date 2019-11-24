@@ -1,8 +1,8 @@
 <div>
-    {{optionQuestion.name}}
+    {{optionQuestion.text}}
     <div *ngFor="let ques of optionQuestion.options">
         <div>{{ques.option}}</div>
     </div>
-    <input type="redew">
+    <input type="text">
     <button (click)="answerSubmit()">Submit</button>
 </div>
